@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="/Test/jquery-latest.js"></script>
+    <style type="text/css">
+        #first{ width: 500px;height: 500px;border: 1px solid red;position: relative;top: 200px;left: 200px;}
+        img{position: absolute;top: 80px;left: 400px}
+    </style>
+</head>
+<body>
+<div class="first">
+    <img class="imgShow" src="" />
+</div>
+<button>Test</button>
+</body>
+<script type="text/javascript">
+//    function x(){
+//        $(".imgShow").attr("src","close.jpg").slideDown('slow',function(){});
+//    };
+    $("button").click(function () {
+        $(".imgShow").attr("src","close.jpg").slideDown('slow',function(){});
+    });
+</script>
+</html>

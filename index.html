@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="/Test/jquery-latest.js"></script>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+
+        #strip {
+            position:absolute;
+            top:80%;
+            left:40%;
+            margin:-150px 0 0 -200px;
+        }
+
+        #vertical {
+            position:absolute;
+            top:60%;
+            left:63%;
+            margin:-150px 0 0 -200px;
+        }
+        #btnVeg{
+            position:absolute;
+            top:200%;
+            left:53%;
+            width: 150px;
+            height: 100px;
+            margin:-150px 0 0 -200px;
+            color: #3e5706;
+            background: #a5cd4e;
+            border-radius: 15px;
+            color:#00FFFF;
+            font-size:30px;
+            font-family:YouYuan;
+        }
+        #btnMeat{
+            position:absolute;
+            top:200%;
+            left:87%;
+            width: 150px;
+            height: 100px;
+            margin:-150px 0 0 -200px;
+            color: #19667d;
+            background: #70c9e3;
+            border-radius: 15px;
+            color:#FF00FF;
+            font-size:30px;
+            font-family:YouYuan;
+        }
+        #btnSoup{
+            position:absolute;
+            top:950%;
+            left:53%;
+            width: 150px;
+            height: 100px;
+            margin:-150px 0 0 -200px;
+            color: #515151;
+            background: #d3d3d3;
+            border-radius: 15px;
+            color:#FF00FF;
+            font-size:30px;
+            font-family:YouYuan;
+        }
+        #btnSnack{
+            position:absolute;
+            top:950%;
+            left:87%;
+            width: 150px;
+            height: 100px;
+            margin:-150px 0 0 -200px;
+            color: #515151;
+            background: #FF1493;
+            border-radius: 15px;
+            color:#00FFFF;
+            font-size:30px;
+            font-family:YouYuan;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img class="imgShow" src="" />
+</div>
+<div id="strip" >
+    <input id="btnVeg" name="btnSubmit" type="button" value="素"/>
+    <input id="btnMeat" name="btnSubmitMeat" type="submit" value="荤"/>
+    <input id="btnSoup" name="btnSubmitSoup" type="submit" value="汤"/>
+    <input id="btnSnack" name="btnSubmitSnack" type="submit" value="零食"/>
+    <HR align=center width=600 color=#990099 SIZE=3 noShade/>
+</div>
+<div id="vertical">
+    <HR align=center size=300 width="2" color="#999999" noShade>
+</div>
+</body>
+<script type="text/javascript">
+    $("#btnVeg").click(function(){
+        $(".imgShow").attr("src","close.jpg").slideDown('slow',function(){});
+    });
+</script>
+</html>
