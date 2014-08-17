@@ -2,18 +2,18 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script type="text/javascript" src="/Test/jquery-latest.js"></script>
+    <script type="text/javascript" src="jquery-latest.js"></script>
     <style type="text/css">
         body {
             text-align: center;
         }
 
-        #strip {
-            position:absolute;
-            top:80%;
-            left:40%;
-            margin:-150px 0 0 -200px;
-        }
+        /*#strip {*/
+        /*position:absolute;*/
+        /*top:80%;*/
+        /*left:40%;*/
+        /*margin:-150px 0 0 -200px;*/
+        /*}*/
 
         #vertical {
             position:absolute;
@@ -22,26 +22,27 @@
             margin:-150px 0 0 -200px;
         }
         #btnVeg{
-            position:absolute;
-            top:200%;
-            left:53%;
+            /*position:absolute;*/
+            /*top:200%;*/
+            /*left:53%;*/
             width: 150px;
             height: 100px;
-            margin:-150px 0 0 -200px;
+            /*margin:-150px 0 0 -200px;*/
             color: #3e5706;
             background: #a5cd4e;
             border-radius: 15px;
             color:#00FFFF;
             font-size:30px;
             font-family:YouYuan;
+            padding: 20px;
         }
         #btnMeat{
-            position:absolute;
-            top:200%;
-            left:87%;
+            /*position:absolute;*/
+            /*top:200%;*/
+            /*left:87%;*/
             width: 150px;
             height: 100px;
-            margin:-150px 0 0 -200px;
+            /*margin:-150px 0 0 -200px;*/
             color: #19667d;
             background: #70c9e3;
             border-radius: 15px;
@@ -50,12 +51,12 @@
             font-family:YouYuan;
         }
         #btnSoup{
-            position:absolute;
-            top:950%;
-            left:53%;
+            /*position:absolute;*/
+            /*top:950%;*/
+            /*left:53%;*/
             width: 150px;
             height: 100px;
-            margin:-150px 0 0 -200px;
+            /*margin:-150px 0 0 -200px;*/
             color: #515151;
             background: #d3d3d3;
             border-radius: 15px;
@@ -64,12 +65,12 @@
             font-family:YouYuan;
         }
         #btnSnack{
-            position:absolute;
-            top:950%;
-            left:87%;
+            /*position:absolute;*/
+            /*top:950%;*/
+            /*left:87%;*/
             width: 150px;
             height: 100px;
-            margin:-150px 0 0 -200px;
+            /*margin:-150px 0 0 -200px;*/
             color: #515151;
             background: #FF1493;
             border-radius: 15px;
@@ -77,26 +78,75 @@
             font-size:30px;
             font-family:YouYuan;
         }
+
+        .imgShow {
+            width: 200px;
+            height: 200px;
+        }
+
+        .imgShowOne {
+            width: 200px;
+            height: 200px;
+        }
+
+        .imgShowTwo {
+            width: 200px;
+            height: 200px;
+        }
+
+        .imgShowThree {
+            width: 200px;
+            height: 200px;
+        }
+
+        .imgShowFour {
+            width: 200px;
+            height: 200px;
+        }
+
     </style>
 </head>
 <body>
-<div>
-    <img class="imgShow" src="" />
-</div>
+
 <div id="strip" >
     <input id="btnVeg" name="btnSubmit" type="button" value="素"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
     <input id="btnMeat" name="btnSubmitMeat" type="submit" value="荤"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
     <input id="btnSoup" name="btnSubmitSoup" type="submit" value="汤"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
     <input id="btnSnack" name="btnSubmitSnack" type="submit" value="零食"/>
-    <HR align=center width=600 color=#990099 SIZE=3 noShade/>
+    <!--<HR align=center width=600 color=#990099 SIZE=3 noShade/>-->
 </div>
-<div id="vertical">
-    <HR align=center size=300 width="2" color="#999999" noShade>
+<br/>
+
+<div>
+    <img class="imgShow" src=""/>
+    <img class="imgShowOne" src=""/>
+    <img class="imgShowTwo" src=""/>
+    <img class="imgShowThree" src=""/>
+    <img class="imgShowFour" src=""/>
 </div>
+
+<!--<div id="vertical">-->
+<!--<HR align=center size=300 width="2" color="#999999" noShade>-->
+<!--</div>-->
 </body>
 <script type="text/javascript">
     $("#btnVeg").click(function(){
-        $(".imgShow").attr("src","close.jpg").slideDown('slow',function(){});
+        $(".imgShow").attr("src", "th.jpg").slideDown('slow', function () {
+        });
+        $(".imgShowOne").attr("src", "th.jpg").slideDown('slow', function () {
+        });
+        $(".imgShowTwo").attr("src", "th.jpg").slideDown('slow', function () {
+        });
+        $(".imgShowThree").attr("src", "th.jpg").slideDown('slow', function () {
+        });
+        $(".imgShowFour").attr("src", "th.jpg").slideDown('slow', function () {
+        });
     });
 </script>
 </html>
