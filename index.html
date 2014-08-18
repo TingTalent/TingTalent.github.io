@@ -104,6 +104,23 @@
             height: 200px;
         }
 
+        #divCenter {
+            position: absolute;
+            z-index: 9;
+            display: none;
+            background-color: #eeeeee;
+            width: 700px;
+            height: 400px;
+            left: 200px;
+            top: 200px;
+            border: 1px solid #222222;
+        }
+
+        #imgBig {
+            width: 700px;
+            height: 400px;
+        }
+
     </style>
 </head>
 <body>
@@ -119,23 +136,33 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
     <input id="btnSnack" name="btnSubmitSnack" type="submit" value="零食"/>
-    <!--<HR align=center width=600 color=#990099 SIZE=3 noShade/>-->
 </div>
 <br/>
 
 <div>
-    <img class="imgShow" src=""/>
+    <a name="imgLink" href="javascript:void(0);" onclick="picBig();"><img class="imgShow" src=""/></a>
     <img class="imgShowOne" src=""/>
     <img class="imgShowTwo" src=""/>
     <img class="imgShowThree" src=""/>
     <img class="imgShowFour" src=""/>
 </div>
 
-<!--<div id="vertical">-->
-<!--<HR align=center size=300 width="2" color="#999999" noShade>-->
-<!--</div>-->
+
+<div id="divCenter" align="center">
+    <img id="imgBig" src="th.jpg"/><a href="javascript:void(0);" onclick="picClose();">关闭</a>
+</div>
 </body>
 <script type="text/javascript">
+    function picBig() {
+        var v = document.getElementById('divCenter');
+        v.style.display = "block";
+    }
+
+    function picClose() {
+        var v = document.getElementById('divCenter');
+        v.style.display = "none";
+    }
+
     $("#btnVeg").click(function(){
         $(".imgShow").attr("src", "th.jpg").slideDown('slow', function () {
         });
@@ -147,6 +174,10 @@
         });
         $(".imgShowFour").attr("src", "th.jpg").slideDown('slow', function () {
         });
+    });
+
+    $(".imgShow").click(function () {
+
     });
 </script>
 </html>
