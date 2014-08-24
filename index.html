@@ -8,98 +8,35 @@
             text-align: center;
         }
 
-        /*#strip {*/
-        /*position:absolute;*/
-        /*top:80%;*/
-        /*left:40%;*/
-        /*margin:-150px 0 0 -200px;*/
-        /*}*/
-
-        #vertical {
-            position:absolute;
-            top:60%;
-            left:63%;
-            margin:-150px 0 0 -200px;
-        }
         #btnVeg{
-            /*position:absolute;*/
-            /*top:200%;*/
-            /*left:53%;*/
-            width: 150px;
-            height: 100px;
-            /*margin:-150px 0 0 -200px;*/
-            color: #3e5706;
             background: #a5cd4e;
-            border-radius: 15px;
             color:#00FFFF;
-            font-size:30px;
-            font-family:YouYuan;
-            padding: 20px;
         }
-        #btnMeat{
-            /*position:absolute;*/
-            /*top:200%;*/
-            /*left:87%;*/
-            width: 150px;
-            height: 100px;
-            /*margin:-150px 0 0 -200px;*/
-            color: #19667d;
+
+        #btnMeat {;
             background: #70c9e3;
-            border-radius: 15px;
             color:#FF00FF;
-            font-size:30px;
-            font-family:YouYuan;
         }
         #btnSoup{
-            /*position:absolute;*/
-            /*top:950%;*/
-            /*left:53%;*/
-            width: 150px;
-            height: 100px;
-            /*margin:-150px 0 0 -200px;*/
-            color: #515151;
             background: #d3d3d3;
-            border-radius: 15px;
             color:#FF00FF;
-            font-size:30px;
-            font-family:YouYuan;
         }
+
         #btnSnack{
-            /*position:absolute;*/
-            /*top:950%;*/
-            /*left:87%;*/
+            background: #FF1493;
+            color:#00FFFF;
+        }
+
+        .btnStyle {
             width: 150px;
             height: 100px;
-            /*margin:-150px 0 0 -200px;*/
-            color: #515151;
-            background: #FF1493;
             border-radius: 15px;
-            color:#00FFFF;
-            font-size:30px;
-            font-family:YouYuan;
+            font-size: 30px;
+            font-family: YouYuan;
+            margin-right: 80px;
         }
 
         .imgShow {
-            width: 200px;
-            height: 200px;
-        }
-
-        .imgShowOne {
-            width: 200px;
-            height: 200px;
-        }
-
-        .imgShowTwo {
-            width: 200px;
-            height: 200px;
-        }
-
-        .imgShowThree {
-            width: 200px;
-            height: 200px;
-        }
-
-        .imgShowFour {
             width: 200px;
             height: 200px;
         }
@@ -126,58 +63,36 @@
 <body>
 
 <div id="strip" >
-    <input id="btnVeg" name="btnSubmit" type="button" value="素"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <input id="btnMeat" name="btnSubmitMeat" type="submit" value="荤"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <input id="btnSoup" name="btnSubmitSoup" type="submit" value="汤"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <input id="btnSnack" name="btnSubmitSnack" type="submit" value="零食"/>
+    <input id="btnVeg" class="btnStyle" name="btnSubmit" type="button" value="素"/>
+    <input id="btnMeat" class="btnStyle" name="btnSubmitMeat" type="submit" value="荤"/>
+    <input id="btnSoup" class="btnStyle" name="btnSubmitSoup" type="submit" value="汤"/>
+    <input id="btnSnack" class="btnStyle" name="btnSubmitSnack" type="submit" value="零食"/>
 </div>
 <br/>
 
 <div>
-    <a name="imgLink" href="javascript:void(0);" onclick="picBig();"><img class="imgShow" src=""/></a>
-    <img class="imgShowOne" src=""/>
-    <img class="imgShowTwo" src=""/>
-    <img class="imgShowThree" src=""/>
-    <img class="imgShowFour" src=""/>
+    <a name="imgLink" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
+    <img class="imgShow" src=""/>
+    <img class="imgShow" src=""/>
+    <img class="imgShow" src=""/>
+    <img class="imgShow" src=""/>
 </div>
 
 
 <div id="divCenter" align="center">
-    <img id="imgBig" src="th.jpg"/><a href="javascript:void(0);" onclick="picClose();">关闭</a>
+    <img id="imgBig" src="th.jpg"/><a href="javascript:void(0);" onclick="picShow('none');">关闭</a>
 </div>
 </body>
 <script type="text/javascript">
-    function picBig() {
-        var v = document.getElementById('divCenter');
-        v.style.display = "block";
-    }
 
-    function picClose() {
+    function picShow(str) {
         var v = document.getElementById('divCenter');
-        v.style.display = "none";
+        v.style.display = str;
     }
 
     $("#btnVeg").click(function(){
-        $(".imgShow").attr("src", "th.jpg").slideDown('slow', function () {
+        $(".imgShow ").attr("src", "th.jpg").slideDown('slow', function () {
         });
-        $(".imgShowOne").attr("src", "th.jpg").slideDown('slow', function () {
-        });
-        $(".imgShowTwo").attr("src", "th.jpg").slideDown('slow', function () {
-        });
-        $(".imgShowThree").attr("src", "th.jpg").slideDown('slow', function () {
-        });
-        $(".imgShowFour").attr("src", "th.jpg").slideDown('slow', function () {
-        });
-    });
-
-    $(".imgShow").click(function () {
-
     });
 </script>
 </html>
