@@ -8,26 +8,9 @@
             text-align: center;
         }
 
-        /*#strip {*/
-        /*position:absolute;*/
-        /*top:80%;*/
-        /*left:40%;*/
-        /*margin:-150px 0 0 -200px;*/
-        /*}*/
-
-        #vertical {
-            position:absolute;
-            top:60%;
-            left:63%;
-            margin:-150px 0 0 -200px;
-        }
         #btnVeg{
-            /*position:absolute;*/
-            /*top:200%;*/
-            /*left:53%;*/
             width: 150px;
             height: 100px;
-            /*margin:-150px 0 0 -200px;*/
             color: #3e5706;
             background: #a5cd4e;
             border-radius: 15px;
@@ -35,71 +18,43 @@
             font-size:30px;
             font-family:YouYuan;
             padding: 20px;
+            margin-right: 80px;
         }
         #btnMeat{
-            /*position:absolute;*/
-            /*top:200%;*/
-            /*left:87%;*/
             width: 150px;
             height: 100px;
-            /*margin:-150px 0 0 -200px;*/
             color: #19667d;
             background: #70c9e3;
             border-radius: 15px;
             color:#FF00FF;
             font-size:30px;
             font-family:YouYuan;
+            margin-right: 80px;
         }
         #btnSoup{
-            /*position:absolute;*/
-            /*top:950%;*/
-            /*left:53%;*/
             width: 150px;
             height: 100px;
-            /*margin:-150px 0 0 -200px;*/
             color: #515151;
             background: #d3d3d3;
             border-radius: 15px;
             color:#FF00FF;
             font-size:30px;
             font-family:YouYuan;
+            margin-right: 80px;
         }
         #btnSnack{
-            /*position:absolute;*/
-            /*top:950%;*/
-            /*left:87%;*/
             width: 150px;
             height: 100px;
-            /*margin:-150px 0 0 -200px;*/
             color: #515151;
             background: #FF1493;
             border-radius: 15px;
             color:#00FFFF;
             font-size:30px;
             font-family:YouYuan;
+            margin-right: 80px;
         }
 
-        .imgShow {
-            width: 200px;
-            height: 200px;
-        }
-
-        .imgShowOne {
-            width: 200px;
-            height: 200px;
-        }
-
-        .imgShowTwo {
-            width: 200px;
-            height: 200px;
-        }
-
-        .imgShowThree {
-            width: 200px;
-            height: 200px;
-        }
-
-        .imgShowFour {
+        .imgShow, .imgShowOne, .imgShowTwo, .imgShowThree, .imgShowFour {
             width: 200px;
             height: 200px;
         }
@@ -127,13 +82,10 @@
 
 <div id="strip" >
     <input id="btnVeg" name="btnSubmit" type="button" value="素"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
     <input id="btnMeat" name="btnSubmitMeat" type="submit" value="荤"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
     <input id="btnSoup" name="btnSubmitSoup" type="submit" value="汤"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
     <input id="btnSnack" name="btnSubmitSnack" type="submit" value="零食"/>
 </div>
@@ -174,10 +126,6 @@
         });
         $(".imgShowFour").attr("src", "th.jpg").slideDown('slow', function () {
         });
-    });
-
-    $(".imgShow").click(function () {
-
     });
 </script>
 </html>
