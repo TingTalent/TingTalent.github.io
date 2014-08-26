@@ -8,23 +8,24 @@
             text-align: center;
         }
 
-        #btnVeg{
+        #btnVeg {
             background: #a5cd4e;
-            color:#00FFFF;
+            color: #00FFFF;
         }
 
         #btnMeat {;
             background: #70c9e3;
-            color:#FF00FF;
-        }
-        #btnSoup{
-            background: #d3d3d3;
-            color:#FF00FF;
+            color: #FF00FF;
         }
 
-        #btnSnack{
+        #btnSoup {
+            background: #d3d3d3;
+            color: #FF00FF;
+        }
+
+        #btnSnack {
             background: #FF1493;
-            color:#00FFFF;
+            color: #00FFFF;
         }
 
         .btnStyle {
@@ -62,8 +63,8 @@
 </head>
 <body>
 
-<div id="strip" >
-    <input id="btnVeg" class="btnStyle" name="btnSubmit" type="button" value="素"/>
+<div id="strip">
+<input id="btnVeg" class="btnStyle" name="btnSubmit" type="button" value="素"/>
     <input id="btnMeat" class="btnStyle" name="btnSubmitMeat" type="submit" value="荤"/>
     <input id="btnSoup" class="btnStyle" name="btnSubmitSoup" type="submit" value="汤"/>
     <input id="btnSnack" class="btnStyle" name="btnSubmitSnack" type="submit" value="零食"/>
@@ -90,7 +91,7 @@
         v.style.display = str;
     }
 
-    $("#btnVeg").click(function(){
+    $("#btnVeg").click(function () {
         $(".imgShow ").attr("src", "th.jpg").slideDown('slow', function () {
         });
     });
