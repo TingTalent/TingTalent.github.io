@@ -4,133 +4,41 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script type="text/javascript" src="jquery-latest.js"></script>
     <style type="text/css">
+        html,
+        body,
+        .marquee {
+            height: 100%;
+        }
+
         body {
             text-align: center;
+            margin: 0px;
+            padding: 0px;
         }
 
-        #btnVeg {
-            background: #a5cd4e;
-            color: #00FFFF;
+        .marquee {
+            background: url(img/nutrition.png) no-repeat center center fixed;
+            background-size: cover;
         }
 
-        #btnMeat {;
-            background: #70c9e3;
-            color: #FF00FF;
-        }
-
-        #btnSoup {
-            background: #d3d3d3;
-            color: #FF00FF;
-        }
-
-        #btnSnack {
-            background: #FF1493;
-            color: #00FFFF;
-        }
-
-        .btnStyle {
-            width: 150px;
-            height: 100px;
-            border-radius: 15px;
-            font-size: 30px;
-            font-family: YouYuan;
-            margin-right: 80px;
-        }
-
-        .imgShow {
-            width: 200px;
-            height: 200px;
-        }
-
-        #divCenter {
-            position: absolute;
-            z-index: 9;
-            display: none;
-            background-color: #eeeeee;
-            width: 700px;
+        .marquee.grid {
+            width: 500px;
             height: 400px;
-            left: 200px;
-            top: 200px;
-            border: 3px solid #222222;
+            background: url(img/grid-sprite.png) no-repeat 0 0;
+            float: right;
+            position: relative;
+            overflow: hidden;
         }
-
-        #imgBig {
-            width: 700px;
-            height: 400px;
-        }
-
-        #imgClose {
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            left: 670px;
-            top: -25px;
-        }
-
     </style>
 </head>
 <body>
+<div class="marquee">
+    <div class="grid">
+        <div class="nutrition">
 
-<div id="strip">
-<input id="btnVeg" class="btnStyle" name="btnSubmit" type="button" value="素"/>
-    <input id="btnMeat" class="btnStyle" name="btnSubmitMeat" type="submit" value="荤"/>
-    <input id="btnSoup" class="btnStyle" name="btnSubmitSoup" type="submit" value="汤"/>
-    <input id="btnSnack" class="btnStyle" name="btnSubmitSnack" type="submit" value="零食"/>
-</div>
-<br/>
-
-<div>
-    <a name="imgLink" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_1" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_2" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_3" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_4" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-</div>
-<div>
-    <a name="imgLink_10" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_11" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_12" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_13" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_14" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-</div>
-<div>
-    <a name="imgLink_20" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_21" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_22" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_23" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-    <a name="imgLink_24" href="javascript:void(0);" onclick="picShow('block');"><img class="imgShow" src=""/></a>
-</div>
-
-
-<div id="divCenter" align="center">
-    <img id="imgBig" src="th.jpg"/>
-    <a href="javascript:void(0);" onclick="picShow('none');">
-        <img id="imgClose" src="close_1.png"/>
-    </a>
+        </div>
+    </div>
 </div>
 </body>
-<script type="text/javascript">
 
-    function picShow(str) {
-        var v = document.getElementById('divCenter');
-        v.style.display = str;
-    }
-
-    $("#btnVeg").click(function () {
-        $(".imgShow ").attr("src", "th.jpg").slideDown('slow', function () {
-        });
-    });
-    $("#btnMeat").click(function () {
-        $(".imgShow ").attr("src", "th.jpg").slideDown('slow', function () {
-        });
-    });
-    $("#btnSoup").click(function () {
-        $(".imgShow ").attr("src", "th.jpg").slideDown('slow', function () {
-        });
-    });
-    $("#btnSnack").click(function () {
-        $(".imgShow ").attr("src", "th.jpg").slideDown('slow', function () {
-        });
-    });
-</script>
 </html>
