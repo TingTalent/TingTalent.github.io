@@ -16,12 +16,6 @@
             padding: 0px;
         }
 
-        /*.marquee-content{*/
-        /*width: 1000px;*/
-        /*height: 500px;*/
-        /*margin: 0 auto;*/
-        /*}*/
-
         .marquee {
             background: url(img/marquee.jpg) no-repeat center center fixed;
             background-size: cover;
@@ -31,22 +25,39 @@
             width: 500px;
             height: 400px;
             background: url(img/grid-sprite.png) no-repeat 0 0;
-            float: right;
-            position: relative;
             overflow: hidden;
+            margin-top: 203px;
+            margin-right: 100px;
+            float: right;
+        }
+
+        .meat, .Vegetable, .Soup, .Retail {
+            color: white;
+            letter-spacing: 5px;
+            font-weight: 700;
+            font-family: YouYuan;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-<!--<div class="marquee-content">-->
+
 <div class="marquee">
     <div class="grid">
-        <div class="nutrition">
-
+        <div class="meat" style="margin-right: 420px; margin-top: 15px;">
+            荤菜
+        </div>
+        <div class="Vegetable" style="margin-right: -100px; margin-top: -20px;">
+            素菜
+        </div>
+        <div class="Soup" style="margin-right: 420px; margin-top: 180px;">
+            汤类
+        </div>
+        <div class="Retail" style="margin-right: -100px; margin-top: -20px;">
+            零食
         </div>
     </div>
     </div>
-<!--</div>-->
 </body>
 
 </html>
