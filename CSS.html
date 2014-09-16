@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
 <head>
-    <script type="text/javascript" src="/Test/jquery-latest.js"></script>
-    <style>
-        .rem{
-            height:100px;
-            width:300px;
-            text-align:center;
-            background-color: yellow;
-            border:1px solid black;
-
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery-latest.js"></script>
+    <style type="text/css">
+        img {
+            width: 224px;
+            height: 237px;
+            border-radius: 4px;
         }
     </style>
 </head>
 
 <body>
-<div class="rem" >77</div>
-<button>点我</button>
+<div class="tb">
+    <table cellpadding="9px">
+        <tr>
+            <td><img src="th.jpg"/></td>
+            <td><img src="th.jpg"/></td>
+            <td><img src="th.jpg"/></td>
+            <td><img src="th.jpg"/></td>
+            <td><img src="th.jpg"/></td>
+        </tr>
+        <tr>
+            <td>荤菜1</td>
+            <td>荤菜2</td>
+            <td>荤菜3</td>
+            <td>荤菜4</td>
+            <td>荤菜5</td>
+        </tr>
+    </table>
+</div>
 </body>
 
 <script type="text/javascript">
-    function x(){
-        $(".rem").empty();
-    };
-    $("button").click(function () {
-        x();
-    });
 </script>
 </html>
