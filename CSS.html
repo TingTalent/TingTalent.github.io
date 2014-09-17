@@ -4,32 +4,52 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="jquery-latest.js"></script>
     <style type="text/css">
+        body {
+            background-color: #eee;
+        }
+
         img {
             width: 224px;
             height: 237px;
-            border-radius: 4px;
+            border-radius: 4px 4px 0 0;
+            display: block;
+        }
+
+        .brickBody {
+            margin: 20px 0 0 20px;
+        }
+
+        .text {
+            width: 224px;
+            height: 38px;
+            text-align: center;
+            letter-spacing: 15px;
+            border-radius: 0 0 4px 4px;
+            background-color: white;
+            padding-top: 13px;
+            font-family: "Microsoft YaHei", simsun, Arial;
+            font-size: 17px;
+        }
+
+        .shadow {
+            width: 224px;
+            height: 18.75px;
+            background-image: url(img/shadow.png);
+            background-repeat: no-repeat;
+            z-index: 902;
         }
     </style>
 </head>
 
 <body>
-<div class="tb">
-    <table cellpadding="9px">
-        <tr>
-            <td><img src="th.jpg"/></td>
-            <td><img src="th.jpg"/></td>
-            <td><img src="th.jpg"/></td>
-            <td><img src="th.jpg"/></td>
-            <td><img src="th.jpg"/></td>
-        </tr>
-        <tr>
-            <td>荤菜1</td>
-            <td>荤菜2</td>
-            <td>荤菜3</td>
-            <td>荤菜4</td>
-            <td>荤菜5</td>
-        </tr>
-    </table>
+<div class="brickBody">
+    <div class="pic">
+        <img src="img/HGR.jpg"/>
+    </div>
+    <div class="text">
+        回锅肉
+    </div>
+    <div class="shadow"></div>
 </div>
 </body>
 
