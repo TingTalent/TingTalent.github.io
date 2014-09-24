@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="jquery-latest.js"></script>
+    <style type="text/css">
+        html,
+        body,
+        .marquee {
+            height: 100%;
+        }
+
+        body {
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .marquee {
+            background: url(img/marquee.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .marquee .grid {
+            width: 500px;
+            height: 400px;
+            background: url(img/grid-sprite.png) no-repeat 0 0;
+            overflow: hidden;
+            margin-top: 190px;
+            margin-right: 100px;
+            float: right;
+        }
+
+        .meat, .Vegetable, .Soup, .Retail {
+            color: white;
+            letter-spacing: 5px;
+            font-weight: 700;
+            font-family: YouYuan;
+            font-size: 20px;
+        }
+
+        .aMeat, .aVegetable, .aSoup, .aRetail {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="marquee">
+    <div class="grid">
+        <div class="meat" style="margin-right: 420px; margin-top: 15px;">
+            <a href="index.html" target="_blank" class="aMeat">荤菜</a>
+        </div>
+        <div class="Vegetable" style="margin-right: -100px; margin-top: -20px;">
+            <a href="index.html" target="_blank" class="aVegetable">素菜</a>
+        </div>
+        <div class="Soup" style="margin-right: 420px; margin-top: 180px;">
+            <a href="index.html" target="_blank" class="aSoup">汤类</a>
+        </div>
+        <div class="Retail" style="margin-right: -100px; margin-top: -20px;">
+            <a href="index.html" target="_blank" class="aRetail">零食</a>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
