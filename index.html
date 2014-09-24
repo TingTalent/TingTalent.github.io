@@ -41,7 +41,7 @@
         }
 
         .Menus {
-            background-color: black;
+            background-color: gray;
             width: 1200px;
             height: 38px;
             margin: 25px 0 15px 20px;
@@ -88,20 +88,22 @@
 
 <body>
 <div class="Menus">
-    <li class="x-item" style="z-index: 99" data-width="60">
-        <a>荤菜</a>
-    </li>
-    <li class="x-item">
-        <div class="bear-head"></div>
+    <ul>
+        <li class="x-item" style="z-index: 99" data-width="60">
+            <a class="Meat">荤菜</a>
+        </li>
+        <li class="x-item">
+            <div class="bear-head"></div>
         <div class="bear-foot"></div>
-        <a>素菜</a>
-    </li>
-    <li class="x-item" style="z-index: 98" data-width="60">
-        <a>汤类</a>
-    </li>
-    <li class="x-item" data-width="60">
-        <a>零食</a>
-    </li>
+            <a class="Veg">素菜</a>
+        </li>
+        <li class="x-item" style="z-index: 98" data-width="60">
+            <a class="Soup">汤类</a>
+        </li>
+        <li class="x-item" data-width="60">
+            <a class="Retail">零食</a>
+        </li>
+    </ul>
 </div>
 <div class="brickBody">
     <div class="pic">
@@ -205,5 +207,35 @@
 </body>
 
 <script type="text/javascript">
+    $(document).ready(function () {
+        $(".Meat").click(function () {
+            $(this).css("background-color", "red");
+            $(".Veg").css("background-color", "gray");
+            $(".Soup").css("background-color", "gray");
+            $(".Retail").css("background-color", "gray");
+
+        })
+        $(".Veg").click(function () {
+            $(this).css("background-color", "red");
+            $(".Meat").css("background-color", "gray");
+            $(".Soup").css("background-color", "gray");
+            $(".Retail").css("background-color", "gray");
+
+        })
+        $(".Soup").click(function () {
+            $(this).css("background-color", "red");
+            $(".Meat").css("background-color", "gray");
+            $(".Veg").css("background-color", "gray");
+            $(".Retail").css("background-color", "gray");
+
+        })
+        $(".Retail").click(function () {
+            $(this).css("background-color", "red");
+            $(".Meat").css("background-color", "gray");
+            $(".Soup").css("background-color", "gray");
+            $(".Veg").css("background-color", "gray");
+
+        })
+    })
 </script>
 </html>
