@@ -94,7 +94,7 @@
         </li>
         <li class="x-item">
             <div class="bear-head"></div>
-        <div class="bear-foot"></div>
+            <div class="bear-foot"></div>
             <a class="Veg">素菜</a>
         </li>
         <li class="x-item" style="z-index: 98" data-width="60">
@@ -209,31 +209,39 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $(".Meat").click(function () {
-            $(this).css("background-color", "red");
+            $(this).css("background-color", "rgb(165, 73, 193)");
             $(".Veg").css("background-color", "gray");
             $(".Soup").css("background-color", "gray");
             $(".Retail").css("background-color", "gray");
+            $(".bear-head").css("left", "-50px");
+            $(".bear-foot").css("left", "-38px");
 
         })
         $(".Veg").click(function () {
-            $(this).css("background-color", "red");
+            $(this).css("background-color", "rgb(165, 73, 193)");
             $(".Meat").css("background-color", "gray");
             $(".Soup").css("background-color", "gray");
             $(".Retail").css("background-color", "gray");
+            $(".bear-head").css("left", "9px");
+            $(".bear-foot").css("left", "22px");
 
         })
         $(".Soup").click(function () {
-            $(this).css("background-color", "red");
+            $(this).css("background-color", "rgb(165, 73, 193)");
             $(".Meat").css("background-color", "gray");
             $(".Veg").css("background-color", "gray");
             $(".Retail").css("background-color", "gray");
+            $(".bear-head").css("left", "70px");
+            $(".bear-foot").css("left", "82px");
 
         })
         $(".Retail").click(function () {
-            $(this).css("background-color", "red");
+            $(this).css("background-color", "rgb(165, 73, 193)");
             $(".Meat").css("background-color", "gray");
             $(".Soup").css("background-color", "gray");
             $(".Veg").css("background-color", "gray");
+            $(".bear-head").css("left", "130px");
+            $(".bear-foot").css("left", "142px");
 
         })
     })
