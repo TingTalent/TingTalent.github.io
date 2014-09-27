@@ -68,7 +68,7 @@
         .bear-head {
             position: absolute;
             top: -17px;
-            left: 9px;
+            left: -50px;
             background: url(img/Background/bear-head.png) 0 0 no-repeat;
             width: 41px;
             height: 29px;
@@ -78,7 +78,7 @@
         .bear-foot {
             position: absolute;
             bottom: -9px;
-            left: 22px;
+            left: -38px;
             width: 18px;
             height: 9px;
             background: url(img/Background/bear-foot.png) 0 0 no-repeat;
@@ -101,13 +101,13 @@
             <a class="Soup">汤类</a>
         </li>
         <li class="x-item" data-width="60">
-            <a class="Retail">零食</a>
+            <a class="Retail">水果</a>
         </li>
     </ul>
 </div>
 <div class="brickBody">
     <div class="pic">
-        <img src="img/Meat/HGR.jpg"/>
+        <img id="imgZero" src="img/Meat/HGR.jpg"/>
     </div>
     <div class="text">
         回锅肉
@@ -117,7 +117,7 @@
 
 <div class="blockOne">
     <div class="picOne">
-        <img src="img/Meat/SZRP.jpg"/>
+        <img id="imgOne" src="img/Meat/SZRP.jpg"/>
     </div>
     <div class="textOne">
         水煮肉片
@@ -127,7 +127,7 @@
 
 <div class="blockTwo">
     <div class="picTwo">
-        <img src="img/Meat/STCR.jpg"/>
+        <img id="imgTwo" src="img/Meat/STCR.jpg"/>
     </div>
     <div class="textTwo">
         蒜苔炒肉
@@ -137,7 +137,7 @@
 
 <div class="blockThree">
     <div class="picThree">
-        <img src="img/Meat/YXRS.jpg"/>
+        <img id="imgThree" src="img/Meat/YXRS.jpg"/>
     </div>
     <div class="textThree">
         鱼香肉丝
@@ -147,7 +147,7 @@
 
 <div class="blockFour">
     <div class="picFour">
-        <img src="img/Meat/GYHZ.jpg"/>
+        <img id="imgFour" src="img/Meat/GYHZ.jpg"/>
     </div>
     <div class="textFour">
         肝腰合炒
@@ -157,7 +157,7 @@
 
 <div class="blockFive">
     <div class="picFive">
-        <img src="img/Meat/JQRS.jpg"/>
+        <img id="imgFive" src="img/Meat/JQRS.jpg"/>
     </div>
     <div class="textFive">
         京酱肉丝
@@ -167,7 +167,7 @@
 
 <div class="blockSix">
     <div class="picSix">
-        <img src="img/Meat/GBJD.jpg"/>
+        <img id="imgSix" src="img/Meat/GBJD.jpg"/>
     </div>
     <div class="textSix">
         宫保鸡丁
@@ -177,7 +177,7 @@
 
 <div class="blockSeven">
     <div class="picSeven">
-        <img src="img/Meat/LRFT.jpg"/>
+        <img id="imgSeven" src="img/Meat/LRFT.jpg"/>
     </div>
     <div class="textSeven">
         烂肉粉条
@@ -187,7 +187,7 @@
 
 <div class="blockEight">
     <div class="picEight">
-        <img src="img/Meat/HSR.jpg"/>
+        <img id="imgEight" src="img/Meat/HSR.jpg"/>
     </div>
     <div class="textEight">
         红烧肉
@@ -197,7 +197,7 @@
 
 <div class="blockNine">
     <div class="picNine">
-        <img src="img/Meat/XSB.jpg"/>
+        <img id="imgNine" src="img/Meat/XSB.jpg"/>
     </div>
     <div class="textNine">
         咸烧白
@@ -216,6 +216,27 @@
             $(".bear-head").css("left", "-50px");
             $(".bear-foot").css("left", "-38px");
 
+            $("#imgZero").attr({src: "img/Meat/HGR.jpg"})
+            $(".text").text("回锅肉")
+            $("#imgOne").attr({src: "img/Meat/SZRP.jpg"})
+            $(".textOne").text("水煮肉片")
+            $("#imgTwo").attr({src: "img/Meat/STCR.jpg"})
+            $(".textTwo").text("蒜苔炒肉")
+            $("#imgThree").attr({src: "img/Meat/YXRS.jpg"})
+            $(".textThree").text("鱼香肉丝")
+            $("#imgFour").attr({src: "img/Meat/GYHZ.jpg"})
+            $(".textFour").text("肝腰合炒")
+            $("#imgFive").attr({src: "img/Meat/JQRS.jpg"})
+            $(".textFive").text("京酱肉丝")
+            $("#imgSix").attr({src: "img/Meat/GBJD.jpg"})
+            $(".textSix").text("宫保鸡丁")
+            $("#imgSeven").attr({src: "img/Meat/LRFT.jpg"})
+            $(".textSeven").text("烂肉粉条")
+            $("#imgEight").attr({src: "img/Meat/HSR.jpg"})
+            $(".textEight").text("红烧肉")
+            $("#imgNine").attr({src: "img/Meat/XSB.jpg"})
+            $(".textNine").text("咸烧白")
+
         })
         $(".Veg").click(function () {
             $(this).css("background-color", "rgb(165, 73, 193)");
@@ -224,6 +245,27 @@
             $(".Retail").css("background-color", "gray");
             $(".bear-head").css("left", "9px");
             $(".bear-foot").css("left", "22px");
+
+            $("#imgZero").attr({src: "img/Vegetable/JCCD.jpg"})
+            $(".text").text("韭菜炒蛋")
+            $("#imgOne").attr({src: "img/Vegetable/KXC.jpg"})
+            $(".textOne").text("空心菜")
+            $("#imgTwo").attr({src: "img/Vegetable/MPDF.jpg"})
+            $(".textTwo").text("麻婆豆腐")
+            $("#imgThree").attr({src: "img/Vegetable/OD.jpg"})
+            $(".textThree").text("藕丁")
+            $("#imgFour").attr({src: "img/Vegetable/QLB.jpg"})
+            $(".textFour").text("炝莲白")
+            $("#imgFive").attr({src: "img/Vegetable/SJD.jpg"})
+            $(".textFive").text("干煸四季豆")
+            $("#imgSix").attr({src: "img/Vegetable/TDS.jpg"})
+            $(".textSix").text("土豆丝")
+            $("#imgSeven").attr({src: "img/Vegetable/YML.jpg"})
+            $(".textSeven").text("玉米粒")
+            $("#imgEight").attr({src: "img/Vegetable/XHSCD.jpg"})
+            $(".textEight").text("西红柿炒蛋")
+            $("#imgNine").attr({src: "img/Vegetable/YXQZ.jpg"})
+            $(".textNine").text("鱼香茄子")
 
         })
         $(".Soup").click(function () {
@@ -234,6 +276,27 @@
             $(".bear-head").css("left", "70px");
             $(".bear-foot").css("left", "82px");
 
+            $("#imgZero").attr({src: "img/Soup/BCYZT.jpg"})
+            $(".text").text("白菜圆子汤")
+            $("#imgOne").attr({src: "img/Soup/DGT.jpg"})
+            $(".textOne").text("冬瓜排骨汤")
+            $("#imgTwo").attr({src: "img/Soup/DYT.jpg"})
+            $(".textTwo").text("西红柿豆芽汤")
+            $("#imgThree").attr({src: "img/Soup/LBT.jpg"})
+            $(".textThree").text("萝卜炖排骨")
+            $("#imgFour").attr({src: "img/Soup/LOPGT.jpg"})
+            $(".textFour").text("莲藕排骨汤")
+            $("#imgFive").attr({src: "img/Soup/QCDFT.jpg"})
+            $(".textFive").text("青菜豆腐汤")
+            $("#imgSix").attr({src: "img/Soup/SCFST.jpg"})
+            $(".textSix").text("酸菜粉丝汤")
+            $("#imgSeven").attr({src: "img/Soup/YMPGT.jpg"})
+            $(".textSeven").text("玉米炖排骨汤")
+            $("#imgEight").attr({src: "img/Soup/ZCDHT.jpg"})
+            $(".textEight").text("紫菜蛋花汤")
+            $("#imgNine").attr({src: "img/Soup/FQDT.jpg"})
+            $(".textNine").text("番茄蛋汤")
+
         })
         $(".Retail").click(function () {
             $(this).css("background-color", "rgb(165, 73, 193)");
@@ -242,6 +305,27 @@
             $(".Veg").css("background-color", "gray");
             $(".bear-head").css("left", "130px");
             $(".bear-foot").css("left", "142px");
+
+            $("#imgZero").attr({src: "img/Fruit/Apple.jpg"})
+            $(".text").text("苹果")
+            $("#imgOne").attr({src: "img/Fruit/Banana.jpg"})
+            $(".textOne").text("香蕉")
+            $("#imgTwo").attr({src: "img/Fruit/Grape.jpg"})
+            $(".textTwo").text("葡萄")
+            $("#imgThree").attr({src: "img/Fruit/Kiwi berry.jpg"})
+            $(".textThree").text("猕猴桃")
+            $("#imgFour").attr({src: "img/Fruit/Mango.jpg"})
+            $(".textFour").text("芒果")
+            $("#imgFive").attr({src: "img/Fruit/Orange.jpg"})
+            $(".textFive").text("橙子")
+            $("#imgSix").attr({src: "img/Fruit/Pear.jpg"})
+            $(".textSix").text("梨子")
+            $("#imgSeven").attr({src: "img/Fruit/Pineapple.jpg"})
+            $(".textSeven").text("菠萝")
+            $("#imgEight").attr({src: "img/Fruit/Strawberry.jpg"})
+            $(".textEight").text("草莓")
+            $("#imgNine").attr({src: "img/Fruit/Watermelon.jpg"})
+            $(".textNine").text("西瓜")
 
         })
     })
