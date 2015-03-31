@@ -105,6 +105,9 @@
         </li>
     </ul>
 </div>
+<div>
+    <button id="json">Read Json</button>
+</div>
 <div class="brickBody">
     <div class="pic">
         <img id="imgZero" src="img/Meat/HGR.jpg"/>
@@ -208,6 +211,15 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+        $("#json").click(function () {
+            $.getJSON('b.json', function (data) {
+                $.each(data, function (key, val) {
+                    alert(val.username);
+                })
+            });
+            //alert("test json");
+        })
+
         $(".Meat").click(function () {
             $(this).css("background-color", "rgb(165, 73, 193)");
             $(".Veg").css("background-color", "gray");
